@@ -31,12 +31,63 @@ body {
     display: block;
     padding: 0 30px;
 }
-
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: gray; */
+    
+}
+.section-title h2{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    /* background-color: blue; */
+}
+.padd-15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
 .container {
     margin: 0 auto;
     max-width: 1100px;
-    background-color: red;
-    width: 100%;
+    /* background-color: red; */
+    /* width: 100%; */
+}
+.hidden{
+    display: none !important;
 }
 
 .main-content {
@@ -180,10 +231,52 @@ body {
 
 .home {
     min-height: 100vh;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
+    align-items: center;
 }
 
 .home .intro {
     text-align: center;
+}
+.home .intro img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #ffffff;
+}
+.home .intro h1{
+    font-size: 30px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 20px 0 5px;
+}
+.home .intro p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: #504e70;
+}
+.home .intro .social-links{
+    margin-top: 25px;
+}
+.home .intro .social-links a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.home .intro .social-links a:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }

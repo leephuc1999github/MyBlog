@@ -15,9 +15,13 @@
 .aside .nav li a.active {
     color: #ec1839;
 }
-
+.section-title h2::before,
+.section-title h2::after,
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after {
+    background-color: #ec1839;
+}
+.home .intro .social-links a{
     background-color: #ec1839;
 }
