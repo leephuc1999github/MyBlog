@@ -11,10 +11,11 @@
 .aside .nav li a:hover {
     color: #ec1839;
 }
-
-.aside .nav li a.active {
+.about .about-content .about-text h3 span,
+.aside .nav li a.active  {
     color: #ec1839;
 }
+.about .about-content .skills .skill-item .progress .progress-in,
 .section-title h2::before,
 .section-title h2::after,
 .aside .nav-toggler span,

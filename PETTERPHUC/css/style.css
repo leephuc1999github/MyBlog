@@ -23,7 +23,12 @@ body{
 .hidden{
     display: none !important;
 }
-
+.divide{
+    background-color: #888888;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+}
 .section {
     /* background-color: #f2f2fc; */
     min-height: 100vh;
@@ -46,8 +51,58 @@ body{
     position: relative;
 }
 .main-content {
-    padding-left: 540px;
+    padding-left: 510px;
     height: 1000px;
+}
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+.title{
+    font-size: 40px;
+    color: #000000;
+    font-weight: 800;
+    position: relative;
+    /* background-color: red; */
+    display: inline-block;
+    margin-bottom: 30px;
+}
+h4{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.btn{
+    color: #00c483;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #00c483;
+    padding : 5px 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn:hover{
+    background-color: #00c483;
+    color: #ffffff;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+.enabled{
+    color: #888888;
+}
+.disabled{
+    color: #000000;
 }
 /* Main Container */
 
@@ -192,6 +247,108 @@ body{
     color: #00c483;
 }
 /* Main Content */
-.home {
-    
+.home{
+    padding: 0 100px;
+}
+.home .about-content {
+    margin-top: 30px;
+}
+.home .about-content .about-text{
+    /* background-color: red; */
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.home .about-content .about-text h3{
+    color : #888888;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.home .about-content .about-text h3 span{
+    color : #00c483;
+    margin: 0 5px;
+}
+.home .about-content .about-text p{
+    color : #888888;
+}
+/* Services */
+.home .about-content .services{
+    /* background-color: red; */
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    /* background-color: red; */
+}
+.home .about-content .services .service-content .service-item{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin : 20px 0;
+}
+.home .about-content .services .service-content .service-item i{
+    font-size: 25px;
+    color: #00c483;
+    margin-bottom: 10px;
+}
+
+.home .about-content .services .service-content .service-item p{
+    color: #888888;
+}
+/* My Pricing  */
+.home .about-content .pricing{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.home .about-content .pricing .pricing-content .pricing-item{
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+}
+.home .about-content .pricing .pricing-content .pricing-item p{
+    color: #00c483;
+    font-size: 50px;
+    font-weight: 800;
+}
+.home .about-content .pricing .pricing-content .pricing-item p span{
+    font-size: 16px;
+    font-weight: 800;
+}
+.home .about-content .pricing .pricing-content .pricing-item ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.home .about-content .pricing .pricing-content .pricing-item ul li{
+    display: block;
+    padding: 10px;
+}
+/* Principal facts */
+.home .about-content .facts{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.home .about-content .facts .fact-content .fact-item{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+.home .about-content .facts .fact-content .fact-item .num{
+    font-size: 25px;
+    color: #00c483;
+    font-weight: 800;
+}
+.home .about-content .facts .fact-content .fact-item .name{
+    font-size: 12px;
+    color: #000000;
+    font-weight: 800;
 }
