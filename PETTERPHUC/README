@@ -1,0 +1,23 @@
+primary : #00c483
+white : #ffffff;
+black : #000000;
+gray : #888888;
+font-family : 'Roboto', sans-serif;
+font-size : 15px;
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+fa fa-user
+fa fa-phone
+fa fa-edit
+fa-briefcase
+fa fa-bookmark-o
+fa fa-desktop
+fa fa-database
+fa fa-rocket
+fa fa-lock
+fa fa-facebook
+fa fa-linkedin
+fa fa-behance
+fa fa-dribbble
+fa fa-cloud-download
+
+Name Designer : inherit
