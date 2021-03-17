@@ -24,10 +24,16 @@ body{
     display: none !important;
 }
 .divide{
-    background-color: #888888;
+    background-color: #e3e3e3;
     width: 100%;
-    height: 1px;
+    height: 0.5px;
     margin: 40px 0;
+}
+.text-description{
+    color:#888888;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
 }
 .section {
     /* background-color: #f2f2fc; */
@@ -39,20 +45,46 @@ body{
     padding-bottom: 70px;
 }
 
-.section-title{
+.section-title,
+.section-description{
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 30px;
+}
+.section-title h2{
+    font-size: 70px;
+    color: #000000;
+    font-weight: 900;
+    position: relative;
+}
+.section-description h3{
+    color : #888888;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.section-description h3 span{
+    color : #00c483;
+    margin: 0 5px;
+}
+.section-content{
+    display: block;
+    width: 100%;
+}
+.section-content .section-item{
     flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     max-width: 100%;
 }
-.section-title h2{
-    font-size: 55px;
-    color: #000000;
-    font-weight: 800;
-    position: relative;
+.section-content .section-item-50{
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
 }
 .main-content {
     padding-left: 510px;
-    height: 1000px;
+    height: 100vh;
 }
 .padd-15{
     padding-left: 15px;
@@ -66,20 +98,26 @@ body{
     position: relative;
 }
 .title{
-    font-size: 40px;
+    font-size: 36px;
     color: #000000;
-    font-weight: 800;
+    font-weight: 900;
     position: relative;
-    /* background-color: red; */
-    display: inline-block;
-    margin-bottom: 30px;
+    display: block;
+    padding-bottom: 20px;
 }
-h4{
-    font-size: 18px;
+.time{
+    color: #00c483;
+    font-size: 15px;
+    font-weight: 600;
+}
+h6{
+    font-size: 20px;
     font-weight: 800;
-    margin-bottom: 10px;
 }
-
+.address{
+    color: rgb(197, 191, 197);
+    font-size: 15px;
+}
 .btn{
     color: #00c483;
     text-transform: uppercase;
@@ -97,6 +135,11 @@ h4{
     color: #ffffff;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
+}
+.btn-big{
+    color: #ffffff;
+    background-color: #00c483;
+    padding: 10px 25px;
 }
 .enabled{
     color: #888888;
@@ -209,10 +252,10 @@ h4{
     top: 0;
     z-index: 10;
     text-align: center;
-    
 }
 .avatar img{
     height: 100vh;
+    width: 440px;
 }
 .avatar .intro{
     margin-top: -300px;
@@ -247,108 +290,186 @@ h4{
     color: #00c483;
 }
 /* Main Content */
-.home{
-    padding: 0 100px;
+.about,.contact,.blog,.work,.resume{
+    padding: 0 50px;
 }
-.home .about-content {
-    margin-top: 30px;
-}
-.home .about-content .about-text{
-    /* background-color: red; */
+
+.history-content,
+.skill-content,
+.fact-content,
+.service-content,
+.pricing-content,
+.message-content,
+.map-content{
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
     max-width: 100%;
-    font-weight: 500;
-    line-height: 1.5;
-    font-size: 16px;
-}
-.home .about-content .about-text h3{
-    color : #888888;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.home .about-content .about-text h3 span{
-    color : #00c483;
-    margin: 0 5px;
-}
-.home .about-content .about-text p{
-    color : #888888;
-}
-/* Services */
-.home .about-content .services{
-    /* background-color: red; */
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 30px;
-    /* background-color: red; */
 }
-.home .about-content .services .service-content .service-item{
+
+/* about me */
+/* service */
+
+.service-content .service-item{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-    margin : 20px 0;
+    padding-bottom: 20px;
 }
-.home .about-content .services .service-content .service-item i{
+.service-content .service-item i{
     font-size: 25px;
     color: #00c483;
-    margin-bottom: 10px;
 }
-
-.home .about-content .services .service-content .service-item p{
-    color: #888888;
+.service-content .service-item h4{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 900;
 }
-/* My Pricing  */
-.home .about-content .pricing{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 30px;
-}
-.home .about-content .pricing .pricing-content .pricing-item{
+/* service end */
+/* my pricing */
+.mypricing-content .mypricing-item{
     -ms-flex: 0 0 33%;
     flex: 0 0 33%;
     max-width: 33%;
     text-align: center;
 }
-.home .about-content .pricing .pricing-content .pricing-item p{
+.mypricing-content .mypricing-item h4{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+.mypricing-content .mypricing-item p{
     color: #00c483;
-    font-size: 50px;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 0.8;
+}
+.mypricing-content .mypricing-item p span{
+    font-size: 14px;
     font-weight: 800;
 }
-.home .about-content .pricing .pricing-content .pricing-item p span{
-    font-size: 16px;
-    font-weight: 800;
-}
-.home .about-content .pricing .pricing-content .pricing-item ul{
+.mypricing-content .mypricing-item ul{
     list-style: none;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
-.home .about-content .pricing .pricing-content .pricing-item ul li{
+.mypricing-content .mypricing-item ul li{
     display: block;
-    padding: 10px;
+    padding: 10px 0;
 }
+/* my pricing end */
 /* Principal facts */
-.home .about-content .facts{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 30px;
-}
-.home .about-content .facts .fact-content .fact-item{
+.principalfacts-content .principalfacts-item{
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
 }
-.home .about-content .facts .fact-content .fact-item .num{
-    font-size: 25px;
+.principalfacts-content .principalfacts-item .num{
+    font-size: 26px;
     color: #00c483;
     font-weight: 800;
 }
-.home .about-content .facts .fact-content .fact-item .name{
-    font-size: 12px;
+.principalfacts-content .principalfacts-item .name{
+    font-size: 13px;
     color: #000000;
-    font-weight: 800;
+    font-weight: bold;
+}
+/* principal facts end */
+
+/* about me end */
+
+
+/* Contact  */
+/* map */
+iframe{
+    padding: 20px 0;
+}
+.map-content ul{
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    color: #888888;
+}
+.map-content ul li{
+    padding: 10px;
+    /* background-color: red; */
+}
+.map-content ul li i{
+    padding-right: 10px;
+    color: #00c483;
+}
+/* map end */
+/* Message */
+.message-content .message-item{
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.message-content .message-item 
+input,textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #888888;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.message-content .message-item 
+input:focus-visible,textarea:focus-visible{
+    border-bottom: 2px solid #00c483;
+}
+/* Message  end */
+/* contact end */
+/* Resume */
+/* Skill */
+.skill-content .skill-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.skill-content .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 0;
+}
+.skill-content .skill-item .progress{
+    background-color: #e3e3e3;
+    height: 4px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.skill-content .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #00c483;
+}
+.skill-content .skill-item .progress .skill-precent{
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-weight: 400;
+    color: #302e4d;
+}
+/* Skill End */
+/* education experience */
+.section-item-50{
+    padding: 0 10px;
+}
+.history-content .history-item{
+    padding: 20px 0;
+}
+
+/* education experience end */
+/* Resume End */
+#side-bar-toggle{
+    position: absolute;
+    height: 100vh;
+    width: 70%;
+    background-color: red;
+    margin-top : 70px;
 }

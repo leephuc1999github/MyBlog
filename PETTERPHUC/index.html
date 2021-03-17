@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -15,19 +16,24 @@
         <!-- Aside -->
         <div class="aside">
             <!-- Menu Icon -->
-            <div class="menu-icon">
+            <div class="menu-icon" onclick="showSideBar()">
                 <span></span>
             </div>
             <!-- Menu Icon End -->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-user"></i></a></li>
-                <li><a href="#"><i class="fa fa-phone"></i></a></li>
-                <li><a href="#"><i class="fa fa-edit"></i></a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i></a></li>
-                <li><a href="#"><i class="fa fa-bookmark-o"></i></a></li>
+                <li><a href="#about-me" class="active" onclick="goToPage('about', this)"><i class="fa fa-user"></i></a>
+                </li>
+                <li><a href="#contact-me" onclick="goToPage('contact',this)"><i class="fa fa-phone"></i></a></li>
+                <li><a href="#my-blog" onclick="goToPage('blog',this)"><i class="fa fa-edit"></i></a></li>
+                <li><a href="#my-work" onclick="goToPage('work',this)"><i class="fa fa-briefcase"></i></a></li>
+                <li><a href="#my-resume" onclick="goToPage('resume',this)"><i class="fa fa-bookmark-o"></i></a></li>
             </ul>
             <div class="down-cv">
-                <a href="#" class="active"><i class="fa fa-cloud-download"></i></a>
+                <a href="https://www.topcv.vn/xem-cv/c1798b6323747ae3f6055830ffce21f7" class="active"><i
+                        class="fa fa-cloud-download"></i></a>
+            </div>
+            <div class="hidden" id="side-bar-toggle">
+                <button onclick="closeSideBar()">đóng</button>
             </div>
         </div>
         <!-- Aside End -->
@@ -35,8 +41,8 @@
         <div class="avatar">
             <img src="./images/niko_img.jpg" alt="Images">
             <div class="intro">
-                <h1>Jose Niko</h1>
-                <p>Developer</p>
+                <h1>Le Khac Phuc</h1>
+                <p>.NET Developer</p>
                 <div class="social-links">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -49,46 +55,43 @@
         <!-- Main Content -->
         <div class="main-content">
             <!-- Home -->
-            <section class="home section">
+            <section id="about-me" class="about section active">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>about me</h2>
                         </div>
+                        <div class="section-description padd-15">
+                            <h3><span>22 years old</span> / <span>Ha Noi</span> / <span>.Net Programmer</span>
+                            </h3>
+                            <p class="text-description">Hi ! My name is Le Khac Phuc . I am a Web Developer ,
+                                and I am very passionate
+                                and delicated to my work . With 2 years experience as a web
+                                programmer , I have acquired the skills and knowledge necessary to make your
+                                project . I enjoy step of the design process , from discussion and
+                                collabration</p>
+                        </div>
                     </div>
+                    <div class="divide"></div>
                     <div class="row">
-                        <div class="about-content padd-15">
+                        <div class="section-content padd-15">
                             <div class="row">
-                                <div class="about-text">
-                                    <h3><span>26 years</span> / <span>Lviv</span> / <span>Freelance</span></h3>
-                                    <p>Prolific, full stack web developer with a passion for metrics and beating former
-                                        "best-yets." Prototyped 25 new product features per year for Flexor, Inc.
-                                        Decreased
-                                        rework by 22% and costs by 15%. Consistently receive high user experience scores
-                                        for
-                                        all web development projects, including a 55% increase for Flexor, Inc.
-                                        Passionate
-                                        about building world class web applications. One of my sites received a 2015
-                                        Webby
-                                        for Best Navigation and Structure.</p>
-                                </div>
-                            </div>
-                            <div class="divide"></div>
-                            <div class="row">
-                                <div class="services">
+                                <div class="section-item">
                                     <h3 class="title">my services</h3>
                                     <div class="service-content">
                                         <div class="row">
                                             <div class="service-item">
                                                 <i class="fa fa-desktop"></i>
                                                 <h4>development</h4>
-                                                <p>Building a custom tailored solution based on your technical
+                                                <p class="text-description">Building a custom tailored solution based on
+                                                    your technical
                                                     specification.</p>
                                             </div>
                                             <div class="service-item">
                                                 <i class="fa fa-rocket"></i>
                                                 <h4>SEO optimization</h4>
-                                                <p>Audit your website, perform technical improvements and write
+                                                <p class="text-description">Audit your website, perform technical
+                                                    improvements and write
                                                     meta
                                                     tags.</p>
                                             </div>
@@ -97,13 +100,15 @@
                                             <div class="service-item">
                                                 <i class="fa fa-database"></i>
                                                 <h4>data base</h4>
-                                                <p>SSL certificate installation and configuration, redirection
+                                                <p class="text-description">SSL certificate installation and
+                                                    configuration, redirection
                                                     configuration on your website.</p>
                                             </div>
                                             <div class="service-item">
                                                 <i class="fa fa-lock"></i>
                                                 <h4>data security</h4>
-                                                <p>Strategy with leading data protection technology to safeguard
+                                                <p class="text-description">Strategy with leading data protection
+                                                    technology to safeguard
                                                     your
                                                     critical data.</p>
                                             </div>
@@ -113,11 +118,11 @@
                             </div>
                             <div class="divide"></div>
                             <div class="row">
-                                <div class="pricing">
+                                <div class="section-item">
                                     <h3 class="title">my pricing</h3>
-                                    <div class="pricing-content">
+                                    <div class="mypricing-content">
                                         <div class="row">
-                                            <div class="pricing-item">
+                                            <div class="mypricing-item">
                                                 <h4>basic</h4>
                                                 <p>$29<span>/hour</span></p>
                                                 <ul>
@@ -128,7 +133,7 @@
                                                 </ul>
                                                 <a href="#" class="btn">choose plan</a>
                                             </div>
-                                            <div class="pricing-item">
+                                            <div class="mypricing-item">
                                                 <h4>advanced</h4>
                                                 <p>$39<span>/hour</span></p>
                                                 <ul>
@@ -139,7 +144,7 @@
                                                 </ul>
                                                 <a href="#" class="btn">choose plan</a>
                                             </div>
-                                            <div class="pricing-item">
+                                            <div class="mypricing-item">
                                                 <h4>premium</h4>
                                                 <p>$29<span>/hour</span></p>
                                                 <ul>
@@ -156,25 +161,224 @@
                             </div>
                             <div class="divide"></div>
                             <div class="row">
-                                <div class="facts">
+                                <div class="section-item">
                                     <h3 class="title">principal facts</h3>
-                                    <div class="fact-content">
+                                    <div class="principalfacts-content">
                                         <div class="row">
-                                            <div class="fact-item">
+                                            <div class="principalfacts-item">
                                                 <p class="num">124</p>
                                                 <p class="name">successul projects</p>
                                             </div>
-                                            <div class="fact-item">
+                                            <div class="principalfacts-item">
                                                 <p class="num">89</p>
                                                 <p class="name">happy clients</p>
                                             </div>
-                                            <div class="fact-item">
+                                            <div class="principalfacts-item">
                                                 <p class="num">18</p>
                                                 <p class="name">awards won</p>
                                             </div>
-                                            <div class="fact-item">
+                                            <div class="principalfacts-item">
                                                 <p class="num">23</p>
                                                 <p class="name">keyboards broken</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-me" class="contact section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>contact me</h2>
+                        </div>
+                        <div class="section-description padd-15">
+                            <p class="text-description">If you have any questions regarding this privacy
+                                statement, the practices of this
+                                site or your dealings with me, please do not hesitate to contact at the
+                                above-mentioned address, e-mail address or phone number.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="section-content padd-15">
+                            <div class="row">
+                                <div class="section-item">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2371333664905!2d105.79860611515214!3d20.983129486023028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc3e1f657e1%3A0x77feb691d107c5f!2zMTExIFBo4buRIFRyaeG7gXUgS2jDumMsIFTDom4gVHJp4buBdSwgVGhhbmggVHLDrCwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1615698083998!5m2!1sen!2s"
+                                        height="400" style="border:0;width: 100%;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                    <div class="map-content">
+                                        <div class="row">
+                                            <ul>
+                                                <li>
+                                                    <p> <i class="fa fa-map-marker"></i> 111 Trieu Khuc str , Ha Noi</p>
+                                                </li>
+                                                <li>
+                                                    <p> <i class="fa fa-phone"></i> 0962521680 - 0433890618</p>
+                                                </li>
+                                                <li>
+                                                    <p> <i class="fa fa-envelope"></i> lephuc0125@gmail.com</p>
+                                                </li>
+                                                <li>
+                                                    <p> <i class="fa fa-envelope"></i> lephuc10111999@gmail.com</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide"></div>
+                            <div class="row">
+                                <div class="section-item">
+                                    <h3 class="title">send message</h3>
+                                    <div class="message-content">
+                                        <div class="row">
+                                            <div class="message-item">
+                                                <input type="text" name="firtname" placeholder="first name">
+                                            </div>
+                                            <div class="message-item">
+                                                <input type="text" name="secondname" placeholder="second name">
+                                            </div>
+                                            <div class="message-item">
+                                                <input type="email" name="email" placeholder="email">
+                                            </div>
+                                            <div class="message-item">
+                                                <textarea name="message" id="" cols="30" rows="10"
+                                                    placeholder="message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#" class="btn btn-big">Send Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="my-blog" class="blog section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>my blog</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </section>
+            <section id="my-work" class="work section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>my works</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </section>
+            <section id="my-resume" class="resume section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>resume</h2>
+                        </div>
+                        <div class="section-description padd-15">
+                            <h3><span>2 years experience</span> / <span>Ha Noi</span> / <span>.Net
+                                    Programmer</span>
+                            </h3>
+                            <p class="text-description">
+                                Web Developer with 2 years of experience in designing and developing user
+                                interfaces, testing, debugging, and training staff within eCommerce
+                                technologies. Proven ability in optimizing web functionality that improve data
+                                retrieval and workflow efficiencies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="row">
+                        <div class="section-content padd-15">
+                            <div class="row">
+                                <div class="section-item">
+                                    <h3 class="title"><i class="fa fa-tachometer" style="color: #00c483;"></i>
+                                        skills</h3>
+                                    <div class="skill-content">
+                                        <div class="row">
+                                            <div class="skill-item">
+                                                <h5>Frontend</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 50%;"></div>
+                                                    <div class="skill-precent">50%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <h5>SQL</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 70%;"></div>
+                                                    <div class="skill-precent">70%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <h5>Backend</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 65%;"></div>
+                                                    <div class="skill-precent">65%</div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-item">
+                                                <h5>Framework</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 80%;"></div>
+                                                    <div class="skill-precent">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divide"></div>
+                            <div class="row">
+                                <div class="section-item-50" id="education">
+                                    <h3 class="title"><i class="fa fa-graduation-cap" style="color: #00c483;"></i>
+                                        education</h3>
+                                    <div class="history-content">
+                                        <div class="row">
+                                            <div class="history-item">
+                                                <p class="time">2017-2021</p>
+                                                <h6>PTIT</h6>
+                                                <p class="address">TranPhu, HaNoi, VietNam</p>
+                                                <p class="text-description">Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Dolore reprehenderit perspiciatis velit nostrum
+                                                    omnis autem? Maiores assumenda ducimus aperiam reprehenderit,
+                                                    voluptate odio. Illum dolorem deserunt architecto quia iure fugiat
+                                                    tenetur.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-item-50" id="experience">
+                                    <h3 class="title"><i class="fa fa-briefcase" style="color: #00c483;"></i> experience
+                                    </h3>
+                                    <div class="history-content">
+                                        <div class="row">
+                                            <div class="history-item">
+                                                <div class="history-item">
+                                                    <p class="time">2019-Now</p>
+                                                    <h6>CTY CO PHAN TIN HOC TAN DAN (TANDAN JSC)</h6>
+                                                    <p class="address">ThinhHao 1, HaNoi, VietNam</p>
+                                                    <p class="text-description">Lorem ipsum dolor, sit amet consectetur
+                                                        adipisicing elit. Impedit dicta pariatur fugiat deleniti nihil
+                                                        vero quibusdam quasi neque eius magni earum sapiente repellendus
+                                                        iusto, similique explicabo illum laudantium. Esse, non.</p>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -192,3 +396,4 @@
 </body>
 
 </html>
+<script src="./js/action.js"></script>

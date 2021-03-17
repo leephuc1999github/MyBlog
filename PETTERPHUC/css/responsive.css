@@ -1,0 +1,192 @@
+@media (max-width : 1200px){
+    .side-bar-toggle{
+        display: none;
+    }
+}
+@media (max-width : 1200px ) and (min-width : 1000px){
+    /* about */
+    /* service */
+    .service-content .service-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    /* service end */
+    /* my pricing */
+    .mypricing-content .mypricing-item{
+        -ms-flex: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    /* my pricing end */
+    /* about end */
+    /* resume */
+    #education,#experience{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+        border-bottom: 0.5px solid #e3e3e3;
+
+    }
+    /* resume end */
+}
+@media (max-width : 1000px ) and (min-width  : 767px){
+    .main-content{
+        padding-left: 370px;
+    }
+    .avatar img{
+        width: 300px;
+        height: 100vh;
+    }
+    .avatar .intro h1{
+        font-size: 35px;
+    }
+    /* about */
+    /* service */
+    .service-content .service-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    /* service end */
+    /* my pricing */
+    .mypricing-content .mypricing-item{
+        -ms-flex: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    /* my pricing end */
+    /* about end */
+    /* resume */
+    #education,#experience{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+        border-bottom: 0.5px solid #e3e3e3;
+
+    }
+    /* resume end */
+}
+@media (max-width : 767px) and (min-width : 650px){
+    .main-content{
+        padding-left: 70px;
+    }
+    .aside{
+        border: 1px solid #e3e3e3;
+    }
+    .avatar{
+        display: none;
+    }
+    #education,#experience{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width : 650px) and (min-width : 500px){
+    .main-content{
+        padding-left: 70px;
+    }
+    .aside{
+        border: 1px solid #e3e3e3;
+    }
+    .avatar{
+        display: none;
+    }
+    /* about */
+    /* service */
+    .service-content .service-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    /* service end */
+    /* my pricing */
+    .mypricing-content .mypricing-item{
+        -ms-flex: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    /* my pricing end */
+    /* about end */
+    #education,#experience{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width:500px) {
+    body,.text-description,.map-content ul{
+        font-size: 14px;
+    }
+    .aside{
+        background-color: #ffffff;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        left: 10px;
+        top: 0;
+    }
+    .aside .nav,
+    .aside .down-cv{
+        display: none;
+    }
+    .avatar{
+        margin: 70px 0;
+        position: unset;
+        text-align: center;
+    }
+    .avatar img{
+        width: 100%;
+    }
+    .main-content{
+        width: 100%;
+        padding: 0;
+    }
+    /* about */
+    /* service */
+    .service-content .service-item{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    /* service end */
+    /* my pricing */
+    .mypricing-content .mypricing-item{
+        -ms-flex: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    /* my pricing end */
+    /* about end */
+    #education,#experience{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 20px 0;
+        border-bottom: 0.5px solid #e3e3e3;
+
+    }
+    .title{
+        font-size: 30px;
+    }
+    .section-title h2{
+        font-size: 50px;
+        color: #000000;
+        font-weight: 900;
+        position: relative;
+    }
+    .side-bar-toggle{
+        display: block;
+    }
+}
