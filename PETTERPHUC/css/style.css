@@ -1,12 +1,13 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-body{
+body {
     margin: 0;
     line-height: 1.5;
     font-size: 15px;
-    font-family : 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     /* background-color: #000000; */
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,84 +21,98 @@ body{
     box-sizing: border-box;
 }
 
-.hidden{
+.hidden {
     display: none !important;
 }
-.divide{
+
+.divide {
     background-color: #e3e3e3;
     width: 100%;
     height: 0.5px;
     margin: 40px 0;
 }
-.text-description{
-    color:#888888;
+
+.text-description {
+    color: #888888;
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
 }
+
 .section {
     /* background-color: #f2f2fc; */
     min-height: 100vh;
     display: block;
 }
-.section .container{
+
+.section .container {
     padding-top: 60px;
     padding-bottom: 70px;
 }
 
 .section-title,
-.section-description{
+.section-description {
     flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     max-width: 100%;
     padding-top: 30px;
 }
-.section-title h2{
+
+.section-title h2 {
     font-size: 70px;
     color: #000000;
     font-weight: 900;
     position: relative;
 }
-.section-description h3{
-    color : #888888;
+
+.section-description h3 {
+    color: #888888;
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 20px;
 }
-.section-description h3 span{
-    color : #00c483;
+
+.section-description h3 span {
+    color: #00c483;
     margin: 0 5px;
 }
-.section-content{
+
+.section-content {
     display: block;
     width: 100%;
 }
-.section-content .section-item{
+
+.section-content .section-item {
     flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     max-width: 100%;
 }
-.section-content .section-item-50{
+
+.section-content .section-item-50 {
     flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     max-width: 50%;
 }
+
 .main-content {
     padding-left: 510px;
     height: 100vh;
 }
-.padd-15{
+
+.padd-15 {
     padding-left: 15px;
     padding-right: 15px;
 }
-.row{
+
+.row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
 }
-.title{
+
+.title {
     font-size: 36px;
     color: #000000;
     font-weight: 900;
@@ -105,51 +120,63 @@ body{
     display: block;
     padding-bottom: 20px;
 }
-.time{
+
+.time {
     color: #00c483;
     font-size: 15px;
     font-weight: 600;
 }
-h6{
+
+h6 {
     font-size: 20px;
     font-weight: 800;
 }
-.address{
+
+.address {
     color: rgb(197, 191, 197);
     font-size: 15px;
 }
-.btn{
+
+.btn {
     color: #00c483;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid #00c483;
-    padding : 5px 10px;
+    padding: 5px 10px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     display: inline-block;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #00c483;
     color: #ffffff;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
 }
-.btn-big{
+
+.btn-big {
     color: #ffffff;
     background-color: #00c483;
     padding: 10px 25px;
 }
-.enabled{
+
+.enabled {
     color: #888888;
 }
-.disabled{
+
+.disabled {
     color: #000000;
 }
+
+
 /* Main Container */
 
+
 /* Aside */
+
 .aside {
     width: 70px;
     background-color: #ffffff;
@@ -161,7 +188,8 @@ h6{
     /* border-right: 1px solid #e8dfec; */
     /* padding: 30px; */
 }
-.aside .menu-icon{
+
+.aside .menu-icon {
     height: 70px;
     width: 70px;
     /* border: 1px solid #d4d4e3; */
@@ -177,6 +205,7 @@ h6{
     -ms-flex-pack: center;
     align-items: center;
 }
+
 .aside .menu-icon span {
     height: 2px;
     width: 25px;
@@ -204,7 +233,7 @@ h6{
 
 .aside .menu-icon span,
 .aside .menu-icon span::before,
-.aside .menu-icon span::after{
+.aside .menu-icon span::after {
     background-color: #ffffff;
 }
 
@@ -236,16 +265,19 @@ h6{
     font-weight: 500;
 }
 
-.aside  .nav li a.active,
-.aside .down-cv a.active{
-    color:#00c483;
-}
-
-.aside .nav li a:hover{
+.aside .nav li a.active,
+.aside .down-cv a.active {
     color: #00c483;
 }
+
+.aside .nav li a:hover {
+    color: #00c483;
+}
+
+
 /* Avatar */
-.avatar{
+
+.avatar {
     margin-left: 70px;
     position: fixed;
     left: 0;
@@ -253,44 +285,57 @@ h6{
     z-index: 10;
     text-align: center;
 }
-.avatar img{
+
+.avatar img {
     height: 100vh;
     width: 440px;
 }
-.avatar .intro{
+
+.avatar .intro {
     margin-top: -300px;
 }
-.avatar .intro h1{
+
+.avatar .intro h1 {
     font-size: 50px;
     line-height: 2;
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
 }
-.avatar .intro p{
+
+.avatar .intro p {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
     line-height: 22px;
     color: #00c483;
 }
-.avatar .intro .social-links{
+
+.avatar .intro .social-links {
     margin-top: 25px;
 }
-.avatar .intro .social-links a{
+
+.avatar .intro .social-links a {
     display: inline-block;
     line-height: 35px;
     text-align: center;
     color: #ffffff;
     margin: 0 4px;
     text-decoration: none;
-
 }
-.avatar .intro .social-links a:hover{
+
+.avatar .intro .social-links a:hover {
     color: #00c483;
 }
+
+
 /* Main Content */
-.about,.contact,.blog,.work,.resume{
+
+.about,
+.contact,
+.blog,
+.work,
+.resume {
     padding: 0 50px;
 }
 
@@ -300,132 +345,180 @@ h6{
 .service-content,
 .pricing-content,
 .message-content,
-.map-content{
+.map-content {
     -ms-flex: 0 0 100%;
     max-width: 100%;
     flex: 0 0 100%;
 }
 
+
 /* about me */
+
+
 /* service */
 
-.service-content .service-item{
+.service-content .service-item {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
     padding-bottom: 20px;
 }
-.service-content .service-item i{
+
+.service-content .service-item i {
     font-size: 25px;
     color: #00c483;
 }
-.service-content .service-item h4{
+
+.service-content .service-item h4 {
     padding: 10px 0;
     font-size: 20px;
     font-weight: 900;
 }
+
+
 /* service end */
+
+
 /* my pricing */
-.mypricing-content .mypricing-item{
+
+.mypricing-content .mypricing-item {
     -ms-flex: 0 0 33%;
     flex: 0 0 33%;
     max-width: 33%;
     text-align: center;
 }
-.mypricing-content .mypricing-item h4{
+
+.mypricing-content .mypricing-item h4 {
     padding: 10px 0;
     font-size: 20px;
     font-weight: 900;
 }
-.mypricing-content .mypricing-item p{
+
+.mypricing-content .mypricing-item p {
     color: #00c483;
     font-size: 54px;
     font-weight: 800;
     line-height: 0.8;
 }
-.mypricing-content .mypricing-item p span{
+
+.mypricing-content .mypricing-item p span {
     font-size: 14px;
     font-weight: 800;
 }
-.mypricing-content .mypricing-item ul{
+
+.mypricing-content .mypricing-item ul {
     list-style: none;
     padding: 20px 0;
 }
-.mypricing-content .mypricing-item ul li{
+
+.mypricing-content .mypricing-item ul li {
     display: block;
     padding: 10px 0;
 }
+
+
 /* my pricing end */
+
+
 /* Principal facts */
-.principalfacts-content .principalfacts-item{
+
+.principalfacts-content .principalfacts-item {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
 }
-.principalfacts-content .principalfacts-item .num{
+
+.principalfacts-content .principalfacts-item .num {
     font-size: 26px;
     color: #00c483;
     font-weight: 800;
 }
-.principalfacts-content .principalfacts-item .name{
+
+.principalfacts-content .principalfacts-item .name {
     font-size: 13px;
     color: #000000;
     font-weight: bold;
 }
+
+
 /* principal facts end */
+
 
 /* about me end */
 
 
 /* Contact  */
+
+
 /* map */
-iframe{
+
+iframe {
     padding: 20px 0;
 }
-.map-content ul{
+
+.map-content ul {
     list-style: none;
     display: block;
     font-size: 16px;
     color: #888888;
 }
-.map-content ul li{
+
+.map-content ul li {
     padding: 10px;
     /* background-color: red; */
 }
-.map-content ul li i{
+
+.map-content ul li i {
     padding-right: 10px;
     color: #00c483;
 }
+
+
 /* map end */
+
+
 /* Message */
-.message-content .message-item{
+
+.message-content .message-item {
     -ms-flex: 0 0 100%;
     max-width: 100%;
     flex: 0 0 100%;
 }
-.message-content .message-item 
-input,textarea{
+
+.message-content .message-item input,
+textarea {
     width: 100%;
     border: none;
     border-bottom: 2px solid #888888;
     font-size: 16px;
     padding: 15px 0;
 }
-.message-content .message-item 
-input:focus-visible,textarea:focus-visible{
+
+.message-content .message-item input:focus-visible,
+textarea:focus-visible {
     border-bottom: 2px solid #00c483;
 }
+
+
 /* Message  end */
+
+
 /* contact end */
+
+
 /* Resume */
+
+
 /* Skill */
-.skill-content .skill-item{
+
+.skill-content .skill-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
-.skill-content .skill-item h5{
+
+.skill-content .skill-item h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
@@ -433,21 +526,24 @@ input:focus-visible,textarea:focus-visible{
     text-transform: capitalize;
     margin: 0;
 }
-.skill-content .skill-item .progress{
+
+.skill-content .skill-item .progress {
     background-color: #e3e3e3;
     height: 4px;
     border-radius: 4px;
     width: 100%;
     position: relative;
 }
-.skill-content .skill-item .progress .progress-in{
+
+.skill-content .skill-item .progress .progress-in {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     background-color: #00c483;
 }
-.skill-content .skill-item .progress .skill-precent{
+
+.skill-content .skill-item .progress .skill-precent {
     line-height: 40px;
     position: absolute;
     right: 0;
@@ -455,21 +551,62 @@ input:focus-visible,textarea:focus-visible{
     font-weight: 400;
     color: #302e4d;
 }
+
+
 /* Skill End */
+
+
 /* education experience */
-.section-item-50{
+
+.section-item-50 {
     padding: 0 10px;
 }
-.history-content .history-item{
+
+.history-content .history-item {
     padding: 20px 0;
 }
 
+
 /* education experience end */
+
+
 /* Resume End */
-#side-bar-toggle{
+
+#side-bar-toggle {
     position: absolute;
     height: 100vh;
     width: 70%;
-    background-color: red;
-    margin-top : 70px;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #e5e2e2;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
+
+#btn-close {
+    display: block;
+}
+
+#side-bar-toggle #btn-close #close {
+    color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px 0 0;
+}
+
+#side-bar-toggle ul {
+    list-style: none;
+    display: block;
+    padding-left: 20px;
+}
+
+#side-bar-toggle ul li {
+    padding: 10px;
+    display: flex;
+    justify-items: flex-start;
+}
+
+#side-bar-toggle ul li a {
+    color: #000000;
 }
