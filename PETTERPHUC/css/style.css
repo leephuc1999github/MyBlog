@@ -1,9 +1,10 @@
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 body {
     margin: 0;
     line-height: 1.5;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     /* background-color: #000000; */
 }
@@ -33,7 +34,7 @@ body {
 }
 
 .text-description {
-    color: #888888;
+    color: #4c5647;
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
@@ -66,14 +67,14 @@ body {
 }
 
 .section-description h3 {
-    color: #888888;
+    color: #4c5647;
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
 .section-description h3 span {
-    color: #00c483;
+    color: #db2827;
     margin: 0 5px;
 }
 
@@ -122,7 +123,7 @@ body {
 }
 
 .time {
-    color: #00c483;
+    color: #db2827;
     font-size: 15px;
     font-weight: 600;
 }
@@ -138,12 +139,12 @@ h6 {
 }
 
 .btn {
-    color: #00c483;
+    color: #db2827;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
-    border: 1px solid #00c483;
+    border: 1px solid #db2827;
     padding: 5px 10px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -151,7 +152,7 @@ h6 {
 }
 
 .btn:hover {
-    background-color: #00c483;
+    background-color: #db2827;
     color: #ffffff;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -159,12 +160,12 @@ h6 {
 
 .btn-big {
     color: #ffffff;
-    background-color: #00c483;
+    background-color: #db2827;
     padding: 10px 25px;
 }
 
 .enabled {
-    color: #888888;
+    color: #4c5647;
 }
 
 .disabled {
@@ -198,7 +199,7 @@ h6 {
     left: 0;
     top: 0;
     z-index: 11;
-    background-color: #00c483;
+    background-color: #db2827;
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
@@ -258,7 +259,7 @@ h6 {
 .aside .nav li a,
 .aside .down-cv a {
     font-size: 25px;
-    color: #888888;
+    color: #4c5647;
     text-decoration: none;
     line-height: 60px;
     display: block;
@@ -267,11 +268,11 @@ h6 {
 
 .aside .nav li a.active,
 .aside .down-cv a.active {
-    color: #00c483;
+    color: #db2827;
 }
 
 .aside .nav li a:hover {
-    color: #00c483;
+    color: #db2827;
 }
 
 
@@ -308,7 +309,7 @@ h6 {
     font-weight: 600;
     margin: 0;
     line-height: 22px;
-    color: #00c483;
+    color: #db2827;
 }
 
 .avatar .intro .social-links {
@@ -325,7 +326,7 @@ h6 {
 }
 
 .avatar .intro .social-links a:hover {
-    color: #00c483;
+    color: #db2827;
 }
 
 
@@ -366,7 +367,7 @@ h6 {
 
 .service-content .service-item i {
     font-size: 25px;
-    color: #00c483;
+    color: #db2827;
 }
 
 .service-content .service-item h4 {
@@ -395,7 +396,7 @@ h6 {
 }
 
 .mypricing-content .mypricing-item p {
-    color: #00c483;
+    color: #db2827;
     font-size: 54px;
     font-weight: 800;
     line-height: 0.8;
@@ -431,7 +432,7 @@ h6 {
 
 .principalfacts-content .principalfacts-item .num {
     font-size: 26px;
-    color: #00c483;
+    color: #db2827;
     font-weight: 800;
 }
 
@@ -461,7 +462,7 @@ iframe {
     list-style: none;
     display: block;
     font-size: 16px;
-    color: #888888;
+    color: #4c5647;
 }
 
 .map-content ul li {
@@ -471,7 +472,7 @@ iframe {
 
 .map-content ul li i {
     padding-right: 10px;
-    color: #00c483;
+    color: #db2827;
 }
 
 
@@ -490,14 +491,14 @@ iframe {
 textarea {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #888888;
+    border-bottom: 2px solid #4c5647;
     font-size: 16px;
     padding: 15px 0;
 }
 
 .message-content .message-item input:focus-visible,
 textarea:focus-visible {
-    border-bottom: 2px solid #00c483;
+    border-bottom: 2px solid #db2827;
 }
 
 
@@ -540,7 +541,7 @@ textarea:focus-visible {
     left: 0;
     top: 0;
     height: 100%;
-    background-color: #00c483;
+    background-color: #db2827;
 }
 
 .skill-content .skill-item .progress .skill-precent {
