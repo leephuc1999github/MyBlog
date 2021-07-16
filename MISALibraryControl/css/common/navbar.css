@@ -6,18 +6,18 @@
     float: left;
 }
 
-    .navbar>.logo-site{
+    .logo-site{
         display: flex;
         width: 100%;
         height: 48px;
     }
-        .navbar>.logo-site>.logo-box{
+        .logo-box{
             display: flex;
             width: 100%;
             padding: 12px 16px;
         }
 
-            .navbar>.logo-site>.logo-box>.toggle-icon{
+            .toggle-icon{
                 width: 24px;
                 height: 24px;
                 padding-right: 10px;
@@ -25,7 +25,7 @@
                 background-size: contain;
                 background-image: url('/content/img/toggle.png');
             }
-            .navbar>.logo-site>.logo-box>.cukcuk-logo{
+            .cukcuk-logo{
                 width: 100%;
                 height: 24px;
                 background-size: contain;
@@ -33,38 +33,38 @@
                 background-image: url('/content/img/cukcuk-logo.png');
             }
 
-    .navbar>.navbar-content{
+    .navbar-content{
         width: 100%;
     }
-        .navbar>.navbar-content>.nav-item{
+        .nav-item{
             height: 44px;
             display: flex;
             padding: 0 16px;
-            line-height: 44px;
-            
+            text-decoration: none;
+            color: #000000;
         }
-        .navbar>.navbar-content>.nav-item:focus{
+        .nav-item:focus{
             background-color: #019160;
             color: #ffffff;
             
         }
-        .navbar>.navbar-content>.nav-item:hover{
+        .nav-item:hover{
             background-color: #e5e5e5e5;
             color: #000000;
             cursor: pointer;
         }
 
-            .nav-item>.nav-item-icon{
+            .nav-item-icon{
+                align-self: center;
                 height: 20px;
                 width: 20px;
-                align-self: center; 
-                margin-right: 8px;
-                background-size: contain;
+            }
+                .nav-item-icon>i{
+                    font-size: 20px;
+                }
+            .nav-item-text{
+                align-self: center;
+                padding-left: 10px;
             }
             
-
-
-#customer, #buy, #report, #employee, #setting, #dashboard{
-    background-image: url('/content/icon/dashboard.png');
-}
 

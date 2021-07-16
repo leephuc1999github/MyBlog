@@ -19,6 +19,10 @@
     src: url('/content/font/GoogleSans-Italic.otf');
 }
 
+@font-face {
+    font-family: 'GoogleSans-Light';
+    src: url('/content/font/GoogleSans-Light.otf');
+}
 
 body{
     font-size: 13px;

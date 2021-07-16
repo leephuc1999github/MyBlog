@@ -4,49 +4,53 @@
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
 }
-    .header>.container{
+    .container{
         display: flex;
         padding: 0 16px;
-        line-height: 48px;
+        height: 100%;
     }
-        .container>.left{
+        .header-left{
+            align-self: center;
         }
 
-        .container>.right{
+        .header-right{
             display: flex;
             right: 16px;
             position: absolute;
+            height: 48px;
         }
 
-            .right .information-site{
+            .information-site{
                 display: flex;
                 line-height: 48px;
             }
 
             .avatar-logo{
-                padding: 0 8px;
                 align-self: center;
-                height: 20px;
-                width: 20px;
+                height: 24px;
+                width: 24px;
                 background: url('/content/icon/avatar-default.png');
                 background-size: contain;
                 background-repeat: no-repeat;
+                margin: 0 8px;
             }
 
             .more-icon{
-                margin-left: 16px;
                 align-self: center;
-                height: 20px;
-                width: 20px;
+                height: 24px;
+                width: 24px;
                 background: url('/content/icon/option.png');
                 background-size: contain;
                 background-repeat: no-repeat;
+                margin-left: 8px;
+            }
+            .username{
+                padding: 0 8px;
             }
 
 
-
-        
-
-#branch{
+/* css select branch */
+#branch>.drop-text-site{
     border: none;
 }
+/* end css select branch */
