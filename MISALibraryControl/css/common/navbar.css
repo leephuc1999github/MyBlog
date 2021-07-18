@@ -18,6 +18,7 @@
         }
 
             .toggle-icon{
+                cursor: pointer;
                 width: 24px;
                 height: 24px;
                 padding-right: 10px;
